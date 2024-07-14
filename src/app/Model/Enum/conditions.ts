@@ -1,0 +1,1 @@
+export enum Conditions { New, Used, Renovated }
