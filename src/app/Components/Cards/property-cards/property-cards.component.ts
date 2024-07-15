@@ -10,6 +10,6 @@ import { Properties } from '../../../Model/Properties/properties';
   styleUrl: './property-cards.component.css'
 })
 export class PropertyCardsComponent {
-  @Input() properties! :Properties
+  @Input() property! :Properties
 
 }
