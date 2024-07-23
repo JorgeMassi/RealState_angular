@@ -20,7 +20,7 @@ export class PropertiesListComponent {
   ngOnInit() {
     this.service.getProperties().subscribe({
       next: (data) => this.properties = data,
-      error: (e) => console.error(e),
+      error: (error) => console.error('Error fetching property', error),
       complete: () => console.info('complete') 
   });
   }

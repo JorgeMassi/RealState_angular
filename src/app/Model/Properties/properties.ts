@@ -5,7 +5,8 @@ import { Prices } from "../Prices/prices";
 import { Addresses } from "../Address/addresses";
 import { User } from "../Users/user";
 
-export interface Properties {
+export class Properties
+{
     id: string;
     typology: Typology;
     location: Addresses;
@@ -21,9 +22,6 @@ export interface Properties {
     features: string;
     user: User;
     price: Prices;
-}
-export class Properties
-{
 
     constructor() {
         this.id = '';
