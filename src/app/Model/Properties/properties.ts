@@ -9,7 +9,7 @@ export interface Properties {
     id: string;
     typology: Typology;
     location: Addresses;
-    yearBuild: number;
+    yearBuilt: number;
     totalArea: number;
     rooms: number;
     floors: number;
@@ -29,7 +29,7 @@ export class Properties
         this.id = '';
         this.typology = new Typology();
         this.location = new Addresses();
-        this.yearBuild = 0;
+        this.yearBuilt = 0;
         this.totalArea = 0;
         this.rooms = 0;
         this.floors = 0;

@@ -17,14 +17,11 @@ export class PropertiesListComponent {
 
   constructor(private service: PropertyServiceService) { }
 
-  ngOnInit(): void {
-    this.loadProperties();}
-
-    loadProperties(): void {
-    this.service.getProperties().subscribe((data: Properties[]) => {
-    this.properties = data;
-    }, error => {
-      console.error('Error fetching properties:', error);
-    });
+  ngOnInit() {
+    this.service.getProperties().subscribe({
+      next: (data) => this.properties = data,
+      error: (e) => console.error(e),
+      complete: () => console.info('complete') 
+  });
   }
 }
