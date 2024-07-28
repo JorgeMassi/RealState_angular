@@ -1,0 +1,22 @@
+<p>property-view works!</p>
+<div class="container">
+    <div class="bg-white border rounded shadow-sm overflow-hidden p-3 col-lg-12">
+
+            <div class="mb-3">
+              <label for="price" class="form-label">Price</label>
+              <input type="number" value="{{prop.price}}" class="form-control" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Image</label>
+                <input type="text" value="{{prop.bathrooms}}" class="form-control" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Description</label>
+                <input type="text" value="{{prop.description}}" class="form-control" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="locationName" class="form-label">Location Name</label>
+                <input type="text" value="{{prop.location.location}}" class="form-control" disabled>
+            </div>
+    </div>
+</div>
