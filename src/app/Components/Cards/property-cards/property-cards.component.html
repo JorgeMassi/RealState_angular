@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div>
     <div class="card" style="width: 18rem; padding: 5px; margin: 20px;">
         <div class="card-body">
@@ -10,3 +11,13 @@
     </div>
 </div>
 
+=======
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{ property.description }}</h5>
+        <p class="card-text">ID: {{ property.id }}</p>
+        <p class="card-text">Rooms: {{ property.rooms }}</p>
+        <a [routerLink]="['/property-view', property.id]" class="btn btn-primary">View Apartment</a>
+    </div>
+</div>
+>>>>>>> 8b49a6c5d87ec60511d5d4a447878469d7e2e2cd

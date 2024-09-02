@@ -1,6 +1,6 @@
 <h2>Apartment List View</h2>
-<div class="d-flex justify-content-center">
-    <div *ngFor="let properties of properties">
-        <app-property-cards [property]="properties"></app-property-cards>
+<div class="d-flex flex-wrap justify-content-center">
+    <div *ngFor="let property of properties" class="p-2">
+        <app-property-cards [property]="property"></app-property-cards>
     </div>
 </div>

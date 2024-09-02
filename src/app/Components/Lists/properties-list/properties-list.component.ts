@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PropertyCardsComponent } from '../../Cards/property-cards/property-cards.component';
 import { Properties } from '../../../Model/Properties/properties';
 import { PropertyServiceService } from '../../../Service/PropertyService/property-service.service';
@@ -11,7 +11,7 @@ import { PropertyServiceService } from '../../../Service/PropertyService/propert
   templateUrl: './properties-list.component.html',
   styleUrl: './properties-list.component.css'
 })
-export class PropertiesListComponent {
+export class PropertiesListComponent implements OnInit {
 
   properties = new Array<Properties>();
 
