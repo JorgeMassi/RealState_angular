@@ -1,23 +1,24 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-  <div class="container">
-    <div class="left-side">
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
-      <header class ="brand-name">
-        <img class="brand-logo" src="../../public/assets/1012.jpg" alt="logo" aria-hidden="true">
-      </header>
-    </div>
 
-    <div class="collapse navbar-collapse" id="mainMenu">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="\property-cards">Apartment Card</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active" href="\properties-list">Property List</a>
-      </li>
-      </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+  <a class="navbar-brand" href="/">
+    <img src="/assets/building.svg" alt="RealState Logo" >
+    RealState
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainMenu  ">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="\property-cards">Apartment Card</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="\properties-list">Property List</a>
+            </li>
+        </ul>
     </div>
-  </div>
 </nav>
-<router-outlet></router-outlet>
+<div class="container">
+    <router-outlet />
+</div>
+
